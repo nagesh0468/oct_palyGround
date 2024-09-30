@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+            <button type="submit" class="btn" onclick="openClick()" > submit</button>
+        <form action="" class="popup" id="popup" >
+            <input type="text">
+            <button type="submit" onclick="closeClick()">click</button>
+        </form>
+        
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        
+
+        function openClick(){
+            popup.classList.add("open_popup");
+            
+        }
+        function closeClick(){
+            popup.classList.remove("open_popup");
+            
+        }
+
+    </script>
+</body>
+</html>
